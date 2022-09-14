@@ -36,8 +36,8 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 ### FIGURE 01 CIRCUIT OF INTERFACING ULTRASONIC SENSOR 
 
+![exp 4](https://user-images.githubusercontent.com/82869119/190160565-50613a9f-971a-49d7-bb55-abd66fb7c96a.png)
 
-![image](https://user-images.githubusercontent.com/36288975/166430594-5adb4ca9-5a42-4781-a7e6-7236b3766a85.png)
 
 
 
@@ -69,14 +69,17 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 			
 			
 
-![image](https://user-images.githubusercontent.com/36288975/190135379-52ebacd5-ccd5-460f-a4cd-4d0ad1d9b179.png)
+![new](https://user-images.githubusercontent.com/82869119/190161813-9549eb4e-6de8-496e-bcba-0acdfb565bbb.png)
+
+
 
 			
 			
 			
 			
 			
-			Average error = sum/ number of readings 
+			Average erAverage error = 2.2/5
+			=0.44
  
 
 
@@ -87,6 +90,8 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 
 ### RESULTS
+
+Hence the average is calculated successfully .
 
 
 
