@@ -34,10 +34,11 @@ The time between the transmission and reception of the signal allows us to calcu
 distance to an object = ((speed of sound in the air)*time)/2
 speed of sound in the air at 20ºC (68ºF) = 343m/s
 
-### FIGURE 01 CIRCUIT OF INTERFACING ULTRASONIC SENSOR 
+### FIGURE 01 CIRCUIT OF INTERFACING ULTRASONIC SENSOR C:\Users\besth\OneDrive\Pictures\Screenshots\Screenshot 2024-03-07 112558.png
 
 
-![image](https://user-images.githubusercontent.com/36288975/166430594-5adb4ca9-5a42-4781-a7e6-7236b3766a85.png)
+![image](https://user-images.githubusercontent.com/3628[NARESH.pdf](https://github.com/vasanthkumarch/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/files/14519655/NARESH.pdf)
+8975/166430594-5adb4ca9-5a42-4781-a7e6-7236b3766a85.png)
 
 
 
@@ -54,7 +55,52 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 10.	Plot the graph for the output voltage vs the resistance 
 
 
-### PROGRAM 
+### PROGRAM NAME:
+const int trigPin=10;
+const int echoPin=9;
+int red=7;
+int green=6;
+long duration;
+float distance;
+
+void setup()
+{
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  pinMode(red, OUTPUT);
+  pinMode(green, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  digitalWrite(trigPin, LOW);
+  delay(20); 
+  digitalWrite(trigPin, HIGH);
+  delay(20);
+  digitalWrite(trigPin,LOW);
+  duration=pulseIn(echoPin,HIGH);
+  distance=(duration*(0.034/2));
+  Serial.print(distance);
+  Serial.println("cms");
+  
+  
+  if(distance >5)
+  {
+    digitalWrite(red,HIGH);
+  delay(200);
+    digitalWrite(red,LOW);
+  delay(200);
+    
+  }
+  else
+  {
+     digitalWrite(green,HIGH);
+  delay(200);
+    digitalWrite(green,LOW);
+  delay(200);
+  }
+}
 
 
 
@@ -62,7 +108,7 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 
 ### Distance vs measurement table 
-
+C:\Users\besth\OneDrive\Pictures\Screenshots\Screenshot 2024-03-07 113211.png
 			
  
 			
